@@ -1,4 +1,4 @@
-package Models;
+package com.UserSecurity.Models;
 
 import java.util.Date;
 
