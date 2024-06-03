@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import com.UserSecurity.Models.TestTable;
 import com.UserSecurity.Repository.ITestTableRepository;
 
+@Service
 public class ServiceTestTable {
 	@Autowired
 	ITestTableRepository RepoTestTab;
