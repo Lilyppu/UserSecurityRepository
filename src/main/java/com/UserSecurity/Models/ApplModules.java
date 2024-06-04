@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "appl_modules")
+@Table(name = "APPL_MODULES")
 
 public class ApplModules {
 

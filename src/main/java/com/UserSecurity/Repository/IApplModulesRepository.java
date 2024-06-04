@@ -3,9 +3,9 @@ package com.UserSecurity.Repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.UserSecurity.Models.TestTable;
+import com.UserSecurity.Models.ApplModules;
 
 @Repository
-public interface ITestTableRepository extends JpaRepository<TestTable, String> {
+public interface IApplModulesRepository extends JpaRepository<ApplModules, Integer> {
 
 }
