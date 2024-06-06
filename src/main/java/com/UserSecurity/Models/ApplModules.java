@@ -14,33 +14,33 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "APPL_MODULES")
+@Table(name = "appl_modules")
 
 public class ApplModules {
 
 	@Id
-	@Column (name="MODULE_ID", nullable = false)
+	@Column (name="module_id", nullable = false)
 	private Integer modId;
 	
-	@Column (name="MODULE_NAME",length=50)
+	@Column (name="module_name",length=50,nullable = false)
 	private String modName;
 	
-	@Column (name="MODULE_DESC",length=300)
+	@Column (name="module_desc",length=300,nullable = false)
 	private String modDesc;
 	
-	@Column (name="MODULE_ENV_NAME",length=50)
+	@Column (name="module_env_na,e",length=50)
 	private String modEnvName;
 	
-	@Column (name="MODULE_CREATED_BY",length=30)
+	@Column (name="module_created_by",length=30,nullable = false)
 	private String modCreatedBy;
 	
-	@Column (name="MODULE_CREATED_DATE")
+	@Column (name="module_created_date",nullable = false)
 	private Date modCreatedDate;
 		
-	@Column (name="MODULE_UPDATE_BY",length=30)
+	@Column (name="module_update_by",length=30)
 	private String modUpdatedBy;
 	
-	@Column (name="MODULE_UPDATE_DATE")
+	@Column (name="module_update_date")
 	private Date modUpdateDate;
 	
 }
