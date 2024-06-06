@@ -11,7 +11,7 @@ import com.UserSecurity.Repository.IApplModulesRepository;
 @Service
 public class ServiceApplModules {
 	@Autowired
-IApplModulesRepository RepoModulesTab;
+	IApplModulesRepository RepoModulesTab;
 	
 	public List<ApplModules> getApplModulesTabList() {
 		return RepoModulesTab.findAll();
