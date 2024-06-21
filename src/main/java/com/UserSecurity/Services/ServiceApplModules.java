@@ -12,19 +12,23 @@ import com.UserSecurity.Repository.IApplModulesRepository;
 @Service
 public class ServiceApplModules {
 	@Autowired
-	IApplModulesRepository RepoModulesTab;
+	IApplModulesRepository repoModulesTab;
 	
 	public List<ApplModules> getApplModulesTabList() {
-		return RepoModulesTab.findAll();
+		return repoModulesTab.findAll();
 	} 
 	
 	public String saveUpdateApplModules(ApplModules saveupdmod) {
-		RepoModulesTab.save(saveupdmod);
+		repoModulesTab.save(saveupdmod);
 		return "Submit Successfully";
 	}
 	
 	public Optional<ApplModules> getModId(Integer modId){
-	    return RepoModulesTab.findByModId(modId);
+	    return repoModulesTab.findByModId(modId);
 	}
 
+	public String DelApplModulesByModId(Integer modId) {
+		repoModulesTab.deleteById(modId);
+		return "Delete Successfully";
+	}
 }

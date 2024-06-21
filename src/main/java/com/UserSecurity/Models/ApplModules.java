@@ -28,7 +28,7 @@ public class ApplModules {
 	@Column (name="module_desc",length=300,nullable = false)
 	private String modDesc;
 	
-	@Column (name="module_env_na,e",length=50)
+	@Column (name="module_env_name",length=50)
 	private String modEnvName;
 	
 	@Column (name="module_created_by",length=30,nullable = false)

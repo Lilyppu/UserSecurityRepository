@@ -19,13 +19,13 @@ public class ApplAuditTrail {
 
 	@Id
 	@Column(name="user_id",length=30)
-	private String roleId;
+	private String audiRoleId;
 	
 	@Column(name="log_date")
-	private Date roleName;
+	private Date audiRoleName;
 	
 	@Column(name="activity", length=30)
-	private String roleDescription;
+	private String audiRoleDescription;
 	
 	@Column(name="object", length=50)
 	private String audiObject;	

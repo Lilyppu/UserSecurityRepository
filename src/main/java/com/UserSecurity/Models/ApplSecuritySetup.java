@@ -19,47 +19,47 @@ public class ApplSecuritySetup {
 
 		@Id
 		@Column(name="pwd_min_length_flag",length=1,nullable = false)
-		private String auditPwdMinLengthFlag;
+		private String secPwdMinLengthFlag;
 		
 		@Column(name="pwd_min_length",length=100)
-		private Integer auditPwdMinLength;
+		private Integer secPwdMinLength;
 		
 		@Column(name="pwd_letter_flag",length=1,nullable = false)
-		private String auditPwdLetterFlag;
+		private String secPwdLetterFlag;
 		
 		@Column(name="pwd_number_flag",length=1,nullable = false)
-		private String auditNumberFlag;	
+		private String secNumberFlag;	
 		
 		@Column(name="pwd_spechar_flag",length=1,nullable = false)
-		private String auditPwdSpecharFlag;
+		private String secPwdSpecharFlag;
 		
 		@Column(name="pwd_expiry_flag",length=1,nullable = false)
-		private String auditExpiryFlag;
+		private String secExpiryFlag;
 		
 		@Column(name="pwd_expiry_length")
-		private Integer auditPwdExpiryLength;
+		private Integer secPwdExpiryLength;
 		
 		@Column(name="pwd_history_flag",length=1,nullable = false)
-		private String auditPwdHistoryFlag;	
+		private String secPwdHistoryFlag;	
 		
 		@Column(name="max_login_attempts")
-		private Integer auditMaxLoginAttempts;
+		private Integer secMaxLoginAttempts;
 		
 		@Column(name="multiple_login_flag",length=1,nullable = false)
-		private String auditMultipleLoginFlag;
+		private String secMultipleLoginFlag;
 		
 		@Column(name="max_sessions")
-		private Integer auditMaxSessions;
+		private Integer secMaxSessions;
 		
 		@Column(name="created_by", length=30)
-		private String auditCreatedBy;	
+		private String secCreatedBy;	
 		
 		@Column(name="created_date")
-		private Date auditCreatedDate;
+		private Date secCreatedDate;
 		
 		@Column(name="last_updated_by", length=30)
-		private String auditUpdatedBy;
+		private String secUpdatedBy;
 		
 		@Column(name="last_updated_date")
-		private Date auditUpdatedDate;
+		private Date secUpdatedDate;
 }

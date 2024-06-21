@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.UserSecurity.Models.ApplMstSpecialDays;
 import com.UserSecurity.Models.ApplSecuritySetup;
 import com.UserSecurity.Repository.IApplSecuritySetup;
 
@@ -16,4 +17,9 @@ public class ServiceApplSecuritySetup {
 	public List<ApplSecuritySetup> getSecuritySetupTabList() {
 		return RepoSecuritySetupTab.findAll();
 	} 
+	
+	public String saveUpdateSecuritySetup(ApplSecuritySetup saveupdsecuritysetup) {
+		RepoSecuritySetupTab.save(saveupdsecuritysetup);
+		return "Submit Successfully";
+	}
 }
