@@ -6,10 +6,10 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import com.UserSecurity.Models.ApplMenus;
+import com.UserSecurity.Models.ApplUsers;
 
 @Repository
-public interface IApplMenusRepository extends JpaRepository<ApplMenus, String> {
+public interface IApplUsersRepository extends JpaRepository<ApplUsers, String> {
 
-	Optional<ApplMenus>findByMenuId(String menuId);
+	Optional<ApplUsers> findByauUserId(String auUserId);
 }
