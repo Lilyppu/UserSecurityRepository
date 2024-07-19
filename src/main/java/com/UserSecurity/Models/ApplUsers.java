@@ -77,4 +77,13 @@ public class ApplUsers {
 	@Column(name="user_coyoutlet",length=5)
 	private String auUserCoyoutlet;
 	
+	@Column(name="user_dep",length=20)
+	private String auUserDep;
+	
+	@Column(name="user_filename",length=1000)
+	private String auUserFilename;
+	
+	@Column(name="user_path",length=1000)
+	private String auUserPath;
+	
 }
