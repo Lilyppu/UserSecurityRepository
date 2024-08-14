@@ -38,4 +38,9 @@ public class ControllerApplUsers {
 	public String DelApplUsersByUserId(String auUserId) {
 		return servApplUsers.DelApplUsersByUserId(auUserId);
 	}
+	
+	@GetMapping("/UserSecurity/checklogin")
+	public String CheckLogin(String userid, String pass, String msg) {
+		return servApplUsers.CheckLogin(userid, pass, msg);
+	}
 }

@@ -32,4 +32,10 @@ public class ServiceApplUsers {
 		return "Delete Successfully";
 	}
 	
+	public String CheckLogin(String userId, String pass, String msg) {
+		System.out.println("aaaaaa :"+userId+"-----"+pass);
+		return repoUsersTab.exeCheckLogin(userId, pass, msg);
+		
+	}
+	
 }
