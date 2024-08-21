@@ -23,6 +23,11 @@ public class ControllerApplUserMenusFavorit {
 		return servmnfav.execAddMenuFav(p_userid, p_menuid, msg);
 	}
 	
+	@GetMapping("/User/execDelFavorit")
+	public String execdelMenuFav(String p_userid, String p_menuid, String msg) {
+		return servmnfav.execDelMenuFav(p_userid, p_menuid, msg);
+	}
+	
 	@GetMapping("/User/getFavoritList")
 	public List<ApplUserMenusFavorit> getMenuFavList(String p_userid){
 		return servmnfav.getMenuFavList(p_userid);

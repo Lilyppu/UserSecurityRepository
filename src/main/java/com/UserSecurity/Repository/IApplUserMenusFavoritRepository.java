@@ -19,5 +19,8 @@ public interface IApplUserMenusFavoritRepository extends JpaRepository<ApplUserM
 	@Procedure(procedureName = "ADD_MENU_FAVORIT")
 	public String exeAddFavorit(String p_userid, String p_menuid, String msg);
 	
+	@Procedure(procedureName = "DELETE_MENU_FAVORIT")
+	public String exeDeleteFavorit(String p_userid, String p_menuid, String msg);
+	
 	public List<ApplUserMenusFavorit> findByAumfUserId (String p_userid);
 }

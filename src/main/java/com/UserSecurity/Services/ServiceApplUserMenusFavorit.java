@@ -20,6 +20,10 @@ public class ServiceApplUserMenusFavorit {
 		return repomnfav.exeAddFavorit(p_userid, p_menuid, msg);
 	}
 	
+	public String execDelMenuFav(String p_userid, String p_menuid, String msg) {
+		return repomnfav.exeDeleteFavorit(p_userid, p_menuid, msg);
+	}
+	
 	public List<ApplUserMenusFavorit> getMenuFavList(String p_userid){
 		return repomnfav.findByAumfUserId(p_userid);
 	}
